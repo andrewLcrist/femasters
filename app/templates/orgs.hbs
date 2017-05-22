@@ -2,6 +2,7 @@
 
 <ul>
   {{#each content as |org|}}
+    <span {{ action 'favoriteClicked' org}}>[Favorite]</span>
     <li>{{link-to org.id 'org' org.id}}</li>
   {{/each}}
 </ul>
