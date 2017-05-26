@@ -1,7 +1,9 @@
+{{log content}}
+
 <ul>
-  <li>{{link-to 'react' 'org.repo.issues' 'react'}}</li>
-  <li>{{link-to 'react-native' 'org.repo.issues' 'react-native'}}</li>
-  <li>{{link-to 'watchiman' 'org.repo.issues' 'react'}}</li>
+  {{#each content as |repo|}}
+    <li>{{link-to repo.name repo.name}}</li>
+  {{/each}}
 </ul>
 
 {{outlet}}
